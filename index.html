@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching - Digital AI Finance</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background-color: #f6f8fa;
+            color: #24292f;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #24292f;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: #8b949e;
+            font-size: 1.1rem;
+        }
+
+        main {
+            flex: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            width: 100%;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .course-card {
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #d0d7de;
+            padding: 1.5rem;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .course-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-card h2 {
+            font-size: 1.25rem;
+            color: #0969da;
+            margin-bottom: 0.75rem;
+        }
+
+        .course-card .description {
+            color: #57606a;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            min-height: 3rem;
+        }
+
+        .course-card .stats {
+            font-size: 0.85rem;
+            color: #6e7781;
+            margin-bottom: 1rem;
+            padding: 0.5rem 0;
+            border-top: 1px solid #eaeef2;
+            border-bottom: 1px solid #eaeef2;
+        }
+
+        .course-links {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .course-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: #0969da;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #0860ca;
+        }
+
+        .btn-secondary {
+            background-color: #f6f8fa;
+            color: #24292f;
+            border: 1px solid #d0d7de;
+        }
+
+        .btn-secondary:hover {
+            background-color: #eaeef2;
+        }
+
+        footer {
+            background-color: #24292f;
+            color: #8b949e;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .course-links {
+                flex-direction: column;
+            }
+
+            .course-links a {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Digital AI Finance - Teaching</h1>
+        <p>BSc Course Materials</p>
+    </header>
+
+    <main>
+        <div class="courses-grid">
+            <!-- Digital Finance -->
+            <div class="course-card">
+                <h2>Digital Finance</h2>
+                <p class="description">
+                    Comprehensive course covering FinTech, Blockchain, AI/ML applications,
+                    and Traditional Finance fundamentals.
+                </p>
+                <p class="stats">48 lessons | 4 modules | 6 ECTS</p>
+                <div class="course-links">
+                    <a href="https://digital-ai-finance.github.io/digital-finance" class="btn-primary" target="_blank">
+                        Documentation
+                    </a>
+                    <a href="https://github.com/Digital-AI-Finance/digital-finance/blob/main/module-description/Modulbeschreibung_DBM_Digital%20Finance%20(WPM)_filled.pdf" class="btn-secondary" target="_blank">
+                        Module Description (PDF)
+                    </a>
+                </div>
+            </div>
+
+            <!-- Data Science -->
+            <div class="course-card">
+                <h2>Data Science with Python</h2>
+                <p class="description">
+                    Python-based data science covering statistics, machine learning,
+                    NLP, visualization, and deployment.
+                </p>
+                <p class="stats">48 lessons | 825 slides | 6 ECTS</p>
+                <div class="course-links">
+                    <a href="https://digital-ai-finance.github.io/data-science" class="btn-primary" target="_blank">
+                        Documentation
+                    </a>
+                    <a href="https://github.com/Digital-AI-Finance/data-science/blob/main/module-description/Modulbeschreibung_DBM_Data%20Science%20(WPM)_filled.pdf" class="btn-secondary" target="_blank">
+                        Module Description (PDF)
+                    </a>
+                </div>
+            </div>
+
+            <!-- Cryptoeconomics -->
+            <div class="course-card">
+                <h2>Cryptoeconomics &amp; Blockchain</h2>
+                <p class="description">
+                    Blockchain technology, cryptocurrency economics, smart contracts,
+                    DeFi protocols, and NFTs.
+                </p>
+                <p class="stats">49 lessons | 8 modules | 6 ECTS</p>
+                <div class="course-links">
+                    <a href="https://digital-ai-finance.github.io/Cryptoeconomics-Blockchain" class="btn-primary" target="_blank">
+                        Documentation
+                    </a>
+                    <a href="https://github.com/Digital-AI-Finance/Cryptoeconomics-Blockchain/blob/main/module-description/Modulbeschreibung_DBM_Krypto%C3%B6konomie%20%26%20die%20Blockchain%20(WPM).pdf" class="btn-secondary" target="_blank">
+                        Module Description (PDF)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Joerg Osterrieder | <a href="https://github.com/Digital-AI-Finance">Digital-AI-Finance</a></p>
+    </footer>
+</body>
+</html>
